@@ -13,5 +13,9 @@ print(slownik.values())
 print(slownik.keys())
 print(slownik.items())
 print(slownik.get('gracz'))
+del slownik['gracz']
+print(slownik)
+
+
 
 
