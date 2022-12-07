@@ -9,8 +9,9 @@ print(data['members'][2])
 print(data['members'][2]['powers'])
 data['members'][2]['powers'][3] = 'Teleportacja'
 
-# slownik = json.dumps(data)
-# print(slownik)
+slownik = '{"name": "Tomek", "lang": "Python", "number": [54, 324, 53, 1, 56, 2322]}'
+person = json.loads(slownik)
+print(json.dumps(person, indent=4))
 
 lista = []
 for i in data['members'][2]['powers']:
