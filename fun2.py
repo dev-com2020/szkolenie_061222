@@ -9,3 +9,4 @@ def mnozenie():
 
 print(mnozenie())
 print(f"Wartość zmiennej a: {a}")
+
