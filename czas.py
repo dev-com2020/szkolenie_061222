@@ -1,5 +1,7 @@
 import time
 import calendar as cal
+import arrow
+from datetime import date, datetime
 
 print(cal.calendar(2023))
 print(cal.firstweekday())
@@ -21,3 +23,12 @@ print(local2)
 
 time_string = time.strftime("%Y--%m--%d", result)
 print(time_string)
+
+print(arrow.utcnow())
+print(arrow.now())
+print(arrow.now('America/Los_Angeles'))
+
+dzis = date.today()
+print(dzis)
+krotka = (dzis.day, dzis.month, dzis.year)
+print(krotka)
