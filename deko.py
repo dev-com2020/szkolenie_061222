@@ -33,17 +33,19 @@ def odejmij(a, b):
 print(wykonaj(dodaj, 2, 3))
 print(glowna())
 
+
 def dekor(funkcja):
-    def wew():
+    def wew(*args, **kwargs):
         print("Dekorujemy funkcje")
-        return funkcja()
+        return funkcja(*args, **kwargs)
+
     return wew
 
+
 @dekor
-def zwykla():
+def zwykla(a, b, c):
     print("To jest zwykła funkcja")
+    print(a + b + c)
 
 
-zwykla()
-
-
+zwykla(1,2,3)
