@@ -10,7 +10,7 @@ lista = []
 #     fh.write("\n")
 
 
-with open('baza.txt', "r", encoding="utf-8") as fh:
+with open('../baza.txt', "r", encoding="utf-8") as fh:
     while fh.readline() != "":
         zapis = fh.readline().rstrip()
         lista.append(zapis)

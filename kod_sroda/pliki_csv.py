@@ -1,6 +1,6 @@
 import csv
 
-with open('dane.csv') as csv_file:
+with open('../dane.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
     for row in csv_reader:
@@ -12,7 +12,7 @@ with open('dane.csv') as csv_file:
             line_count += 1
 lista = [['John Smith2', 'IT', 'March'], ['John Smith3', 'IT', 'March'], ['John Smith4', 'IT', 'March']]
 
-with open('dane2.csv', 'w', newline="") as employee_file:
+with open('../dane2.csv', 'w', newline="") as employee_file:
     employee_writer = csv.writer(employee_file, delimiter=',', quotechar='"')
     employee_writer.writerow(['name', 'department', 'birthday month'])
     employee_writer.writerow(['John Smith', 'IT', 'March'])

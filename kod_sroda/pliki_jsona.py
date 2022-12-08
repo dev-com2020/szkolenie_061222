@@ -1,6 +1,6 @@
 import json
 
-with open("dane.json", 'r') as f:
+with open("../dane.json", 'r') as f:
     data = json.load(f)
 
 print(data)
@@ -19,5 +19,5 @@ for i in data['members'][2]['powers']:
 
 print(lista)
 
-with open("dane2.json", 'w') as f:
+with open("../dane2.json", 'w') as f:
     data = json.dump(data, f, indent=4)
