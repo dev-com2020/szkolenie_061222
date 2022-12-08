@@ -1,4 +1,8 @@
 class Human:
+    """
+    Klasa Human - symuluje człowieka
+    """
+
     imie = ""
     wiek = None
     plec = ""
@@ -7,7 +11,7 @@ class Human:
         print(f"Cześć,mam na imię {self.imie}")
 
     def ruszaj(self):
-        if self.plec == 'k' or 'kobieta':
+        if self.plec == 'k' or self.plec == 'kobieta':
             print("Ruszyłam w drogę!")
         else:
             print("Ruszyłem w drogę...")
