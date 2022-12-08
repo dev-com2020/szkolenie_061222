@@ -1,0 +1,41 @@
+<root>
+<location>
+<name>Kielce</name>
+<region/>
+<country>Poland</country>
+<lat>50.83</lat>
+<lon>20.67</lon>
+<tz_id>Europe/Warsaw</tz_id>
+<localtime_epoch>1670488620</localtime_epoch>
+<localtime>2022-12-08 9:37</localtime>
+</location>
+<current>
+<last_updated_epoch>1670488200</last_updated_epoch>
+<last_updated>2022-12-08 09:30</last_updated>
+<temp_c>-0.1</temp_c>
+<temp_f>31.8</temp_f>
+<is_day>1</is_day>
+<condition>
+<text>Partly cloudy</text>
+<icon>//cdn.weatherapi.com/weather/64x64/day/116.png</icon>
+<code>1003</code>
+</condition>
+<wind_mph>7.2</wind_mph>
+<wind_kph>11.5</wind_kph>
+<wind_degree>196</wind_degree>
+<wind_dir>SSW</wind_dir>
+<pressure_mb>1013</pressure_mb>
+<pressure_in>29.91</pressure_in>
+<precip_mm>0</precip_mm>
+<precip_in>0</precip_in>
+<humidity>89</humidity>
+<cloud>36</cloud>
+<feelslike_c>-3.8</feelslike_c>
+<feelslike_f>25.2</feelslike_f>
+<vis_km>10</vis_km>
+<vis_miles>6</vis_miles>
+<uv>2</uv>
+<gust_mph>11.2</gust_mph>
+<gust_kph>18</gust_kph>
+</current>
+</root>
