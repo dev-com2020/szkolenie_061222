@@ -1,0 +1,41 @@
+{
+  "location": {
+    "name": "Kielce",
+    "region": "",
+    "country": "Poland",
+    "lat": 50.83,
+    "lon": 20.67,
+    "tz_id": "Europe/Warsaw",
+    "localtime_epoch": 1670488322,
+    "localtime": "2022-12-08 9:32"
+  },
+  "current": {
+    "last_updated_epoch": 1670488200,
+    "last_updated": "2022-12-08 09:30",
+    "temp_c": -0.1,
+    "temp_f": 31.8,
+    "is_day": 1,
+    "condition": {
+      "text": "Partly cloudy",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+      "code": 1003
+    },
+    "wind_mph": 7.2,
+    "wind_kph": 11.5,
+    "wind_degree": 196,
+    "wind_dir": "SSW",
+    "pressure_mb": 1013,
+    "pressure_in": 29.91,
+    "precip_mm": 0,
+    "precip_in": 0,
+    "humidity": 89,
+    "cloud": 36,
+    "feelslike_c": -3.8,
+    "feelslike_f": 25.2,
+    "vis_km": 10,
+    "vis_miles": 6,
+    "uv": 2,
+    "gust_mph": 11.2,
+    "gust_kph": 18
+  }
+}
