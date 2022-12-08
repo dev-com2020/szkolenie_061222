@@ -36,14 +36,31 @@ class Kalkulator:
         print("Wynik odejmowania:", a - b)
 
     def podziel(self, a, b):
-        print("Wynik dzielenia:", a / b)
+        try:
+            print("Wynik dzielenia:", a / b)
+        except ZeroDivisionError:
+            print("Błąd dzielenia przez 0")
 
     def pomnoz(self, a, b):
-        print("Wynik mnożenia:", a * b)
+        try:
+            return int(a) * int(b)
+        except TypeError:
+            return "błąd typu"
+        except ValueError:
+            return "błąd wartości"
+
+    def pomnoz2(self, a, b):
+        try:
+            return int(a) * int(b)
+        except Exception as e:
+            print(f"Błąd: {e.args}")
 
 
 kalkulator = Kalkulator()
+print(kalkulator.pomnoz('a', 'b'))
+kalkulator.pomnoz2("a","b")
 kalkulator.dodaj(2, 3)
 kalkulator.odejmij(3, 2)
 kalkulator.podziel(3, 0)
-kalkulator.pomnoz(3, 2)
+kalkulator.podziel(32, 2)
+
