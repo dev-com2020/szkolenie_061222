@@ -1,34 +1,45 @@
 class Tesla:
     def __init__(self, kolor='biały'):
-        self.silnik = False
-        self.bieg = 0
-        self.predkosc = 0
+        self.__silnik = False
+        self.__bieg = 0
+        self.__predkosc = 0
         self.kolor = kolor
 
     def uruchom(self):
-        self.silnik = True
+        self.__silnik = True
 
     def wylacz(self):
-        self.silnik = False
+        self.__silnik = False
 
     def biegNastepny(self):
-        if self.bieg <= 6:
-            self.bieg += 1
-            print(f"Bieg:{self.bieg}")
+        if self.__bieg <= 6:
+            self.__bieg += 1
+            print(f"Bieg:{self.__bieg}")
 
     def biegPoprzedni(self):
-        if self.bieg >= 0:
-            self.bieg -= 1
-            print(f"Bieg:{self.bieg}")
+        if self.__bieg >= 0:
+            self.__bieg -= 1
+            print(f"Bieg:{self.__bieg}")
 
     def przyspiesz(self):
-        if self.silnik == True and self.bieg > 0:
-            self.predkosc += 10
-            print(f"Prędkość:{self.predkosc}")
+        if self.__silnik is True and self.__bieg > 0:
+            self.__predkosc += 10
+            print(f"Prędkość:{self.__predkosc}")
 
     def hamuj(self):
-        if self.predkosc >= 10:
-            self.predkosc -= 10
-            print(f"Prędkość:{self.predkosc}")
+        if self.__predkosc >= 10:
+            self.__predkosc -= 10
+            print(f"Prędkość:{self.__predkosc}")
         else:
-            self.predkosc = 0
+            self.__predkosc = 0
+
+car = Tesla()
+car.uruchom()
+car.biegNastepny()
+car.przyspiesz()
+# car.__predkosc = 300
+car.przyspiesz()
+car.hamuj()
+car.hamuj()
+car.biegPoprzedni()
+car.wylacz()
