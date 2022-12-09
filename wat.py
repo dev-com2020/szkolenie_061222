@@ -8,8 +8,17 @@ def task():
 
 
 start_time = perf_counter()
-task()
-task()
+
+t1 = Thread(target=task)
+t2 = Thread(target=task)
+
+t1.start()
+t2.start()
+
+t1.join()
+t2.join()
+
 end_time = perf_counter()
+
 
 print(f"To zajęło {end_time - start_time: 0.2f} sek")
