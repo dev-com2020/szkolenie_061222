@@ -1,6 +1,6 @@
 import xml.dom.minidom
 
-doc = xml.dom.minidom.parse("book.xml")
+doc = xml.dom.minidom.parse("../book.xml")
 
 print(doc.nodeName)
 print(doc.firstChild.tagName)

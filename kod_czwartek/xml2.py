@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-with open("book.xml") as xml_file:
+with open("../book.xml") as xml_file:
     data = xml_file.read()
 
 soup = BeautifulSoup(data, "lxml-xml")

@@ -1,7 +1,7 @@
 import json
 from PIL import Image
 
-with open("pogoda.json")as f:
+with open("../pogoda.json")as f:
     pogoda = json.load(f)
 
 ikona = "116.png"
